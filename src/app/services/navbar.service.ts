@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { MatSidenav } from './../material/material.module';
+/*import { Injectable } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Injectable()
 export class NavbarService {
@@ -23,3 +23,4 @@ export class NavbarService {
     this.sidenav.toggle();
   }
 }
+*/

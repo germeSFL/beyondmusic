@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-  <mat-sidenav mode="over" >
+  <mat-sidenav mode="over" #sidenav>
     <button mat-button class="menu-button">
       <mat-icon>home</mat-icon>
       <span>Home</span>
@@ -20,12 +20,10 @@
       <span>Help</span>
     </button>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <div class="navbar-container">
-      <app-navbar
-        class="navbar mat-elevation-z8"
-        (openedSidebar)="onOpenSidebar()"
-      ></app-navbar>
+      <app-navbar class="navbar mat-elevation-z8"></app-navbar>
     </div>
     <div class="content mat-elevation-z8"></div>
   </mat-sidenav-content>

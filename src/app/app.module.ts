@@ -9,13 +9,14 @@ import { NavbarComponent } from './components/layout/navbar/navbar.component';
 
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { NavbarService } from './services/navbar.service';
 
 @NgModule({
   imports: [
-    BrowserModule, 
+    BrowserModule,
     BrowserAnimationsModule,
-    FormsModule, 
-    MaterialModule
+    FormsModule,
+    MaterialModule,
   ],
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     NavbarComponent,
   ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

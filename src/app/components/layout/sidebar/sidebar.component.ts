@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { NavbarService } from './../../../services/navbar.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,13 +6,7 @@ import { NavbarService } from './../../../services/navbar.service';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent implements OnInit {
-  sidebarState = '';
-
-  constructor(private sidenav: NavbarService) {}
+  constructor() {}
 
   ngOnInit() {}
-
-  onOpenSidebar() {
-    this.sidebarState = 'opened';
-  }
 }
