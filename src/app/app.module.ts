@@ -8,9 +8,15 @@ import { SidebarComponent } from './components/layout/sidebar/sidebar.component'
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 
 import { MaterialModule } from './material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MaterialModule],
+  imports: [
+    BrowserModule, 
+    BrowserAnimationsModule,
+    FormsModule, 
+    MaterialModule
+  ],
   declarations: [
     AppComponent,
     LayoutComponent,
