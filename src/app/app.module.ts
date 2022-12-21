@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/layout/navbar/navbar.component';
 
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarService } from './services/navbar.service';
 //import { NavbarService } from './services/navbar.service';
 
 @NgModule({
@@ -24,7 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     NavbarComponent,
   ],
-  providers: [],
+  providers: [NavbarService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
