@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarService } from './services/navbar.service';
+import { TemplateService } from './services/template.service';
 //import { NavbarService } from './services/navbar.service';
 
 @NgModule({
@@ -25,7 +26,7 @@ import { NavbarService } from './services/navbar.service';
     SidebarComponent,
     NavbarComponent,
   ],
-  providers: [NavbarService],
+  providers: [NavbarService, TemplateService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
