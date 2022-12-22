@@ -7,12 +7,13 @@ import { TemplateService } from '../../../services/template.service';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent implements OnInit {
-  template = '';
+  template = null;
   constructor(private templateService: TemplateService) {}
 
   ngOnInit() {
     this.template = this.templateService.provideTemplate();
-    console.log(this.template);
   }
-  onSwitchMode() {}
+  onSwitchMode() {
+    this.template = this.templateService.provideTemplate();
+  }
 }

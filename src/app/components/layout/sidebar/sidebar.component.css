@@ -1,4 +1,4 @@
-mat-sidenav {
+.mat-sidenav-light {
   margin: 16px;
   width: 200px;
   border-right: none;
@@ -9,12 +9,28 @@ mat-sidenav {
   text-align: center;
 }
 
-.menu-button {
+.mat-sidenav-dark {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: #3c3f4b;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.menu-button-light {
   color: black;
   text-shadow: #707488 1px 1px 2px;
 }
 
-.content {
+.menu-button-dark {
+  color: black;
+  text-shadow: #707488 1px 1px 2px;
+}
+
+.content-light {
   height: calc(100vh - 98px);
   border-radius: 15px;
   margin: 16px;
@@ -32,6 +48,24 @@ mat-sidenav {
   background-color: #e0e0eb;
 }
 
+.content-dark {
+  height: calc(100vh - 98px);
+  border-radius: 15px;
+  margin: 16px;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: #a6a2c3;
+  text-shadow: rgb(49, 49, 49) 1px 1px 2px;
+
+  background-color: #28282c;
+}
+
 mat-sidenav-container {
   height: calc(100vh - 65px);
 }
@@ -45,7 +79,15 @@ mat-sidenav-container {
   margin-right: 3%;
 }
 
-.menu-button-mode {
+.menu-icon-light {
+  color: white;
+  text-shadow: #707488 1px 1px 2px;
+  position: relative;
+  top: 57%;
+  text-align: center;
+}
+
+.menu-icon-dark {
   color: white;
   text-shadow: #707488 1px 1px 2px;
   position: relative;

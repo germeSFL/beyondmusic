@@ -3,45 +3,46 @@
   rel="stylesheet"
 />
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
-    <button mat-button class="menu-button">
+  <mat-sidenav [ngClass]="template.sidenavClass" mode="side" opened>
+    <button mat-button [ngClass]="template.buttonClass">
       <mat-icon>search</mat-icon>
       <span class="menu-voice">Explore</span>
     </button>
 
-    <button mat-button class="menu-button">
+    <button mat-button [ngClass]="template.buttonClass">
       <mat-icon>album</mat-icon>
       <span class="menu-voice">Genres</span>
     </button>
 
-    <button mat-button class="menu-button">
+    <button mat-button [ngClass]="template.buttonClass">
       <mat-icon>library_music</mat-icon>
       <span class="menu-voice">Library</span>
     </button>
 
-    <button mat-button class="menu-button">
+    <button mat-button [ngClass]="template.buttonClass">
       <mat-icon>person</mat-icon>
       <span class="menu-voice">Profile</span>
     </button>
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button">
+    <button mat-button [ngClass]="template.buttonClass">
       <mat-icon>settings</mat-icon>
       <span class="menu-voice">Settings</span>
     </button>
 
     <br />
 
-    <button mat-icon-button class="menu-button-mode" (click)="onSwitchMode()">
+    <button
+      (click)="onSwitchMode()"
+      mat-icon-button
+      [ngClass]="template.iconClass"
+    >
       <mat-icon>brightness_6</mat-icon><br />
     </button>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <!-- <div class="navbar-container">
-      <app-navbar class="navbar mat-elevation-z8"></app-navbar>
-    </div> -->
-    <div class="content mat-elevation-z8">I'm the content</div>
+    <div [ngClass]="template.contentClass"></div>
   </mat-sidenav-content>
 </mat-sidenav-container>
