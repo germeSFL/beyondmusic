@@ -1,30 +1,46 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
 <mat-sidenav-container>
-  <mat-sidenav mode="over">
+  <mat-sidenav mode="side" opened>
     <button mat-button class="menu-button">
-      <mat-icon>home</mat-icon>
-      <span>Home</span>
+      <mat-icon>search</mat-icon>
+      <span class="menu-voice">Explore</span>
     </button>
+
+    <button mat-button class="menu-button">
+      <mat-icon>album</mat-icon>
+      <span class="menu-voice">Genres</span>
+    </button>
+
+    <button mat-button class="menu-button">
+      <mat-icon>library_music</mat-icon>
+      <span class="menu-voice">Library</span>
+    </button>
+
     <button mat-button class="menu-button">
       <mat-icon>person</mat-icon>
-      <span>Profile</span>
-    </button>
-    <button mat-button class="menu-button">
-      <mat-icon>info</mat-icon>
-      <span>About</span>
+      <span class="menu-voice">Profile</span>
     </button>
 
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button">
-      <mat-icon>help</mat-icon>
-      <span>Help</span>
+      <mat-icon>settings</mat-icon>
+      <span class="menu-voice">Settings</span>
+    </button>
+
+    <button mat-button class="menu-button-mode">
+      <mat-icon>settings</mat-icon><br />
+      <span class="menu-voice">Settings</span>
     </button>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <div class="navbar-container">
+    <!-- <div class="navbar-container">
       <app-navbar class="navbar mat-elevation-z8"></app-navbar>
-    </div>
-    <div class="content mat-elevation-z8"></div>
+    </div> -->
+    <div class="content mat-elevation-z8">I'm the content</div>
   </mat-sidenav-content>
 </mat-sidenav-container>

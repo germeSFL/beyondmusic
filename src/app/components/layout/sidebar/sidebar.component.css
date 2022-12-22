@@ -2,11 +2,16 @@ mat-sidenav {
   margin: 16px;
   width: 200px;
   border-right: none;
-  background: #002b5c;
+  background: #9fa6c6;
   color: white;
   border-radius: 10px;
   padding: 16px;
   text-align: center;
+}
+
+.menu-button {
+  color: black;
+  text-shadow: #707488 1px 1px 2px;
 }
 
 .content {
@@ -21,7 +26,10 @@ mat-sidenav {
   align-items: center;
 
   font-size: 2rem;
-  color: lightgray;
+  color: #a6a2c3;
+  text-shadow: rgb(49, 49, 49) 1px 1px 2px;
+
+  background-color: #e0e0eb;
 }
 
 mat-sidenav-container {
@@ -36,3 +44,11 @@ mat-sidenav-container {
   margin-left: 3%;
   margin-right: 3%;
 }
+
+.menu-button-mode {
+  color: black;
+  text-shadow: #707488 1px 1px 2px;
+  position: relative;
+  top: 60%;
+}
+
